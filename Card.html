@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掼蛋/斗地主</title>
+    <link rel="stylesheet" href="style0.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: "Get",
+                url: "JS/AudioInfo.json",
+                success: function (data) {
+                    doConstruct(data);
+                }
+            })
+        })
+
+        function doConstruct(data) {
+            for (var item of data) {
+                var title = item.title;
+                var display = item.display;
+                alert(title + display);
+                $('<div />', {
+                    class: "panel",
+                    name: title,
+                    text: display
+                }).appendTo($("#choice-panel-container"))
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <audio src="Audio/Procedure/BuYao.mp3" id="audioPlayer" controls="controls" preload="auto" autoplay="false"
+        hidden=true></audio>
+    <header>
+        <div id="header1">在医院对面掼蛋</div>
+        <div id="header2">以便就医</div>
+    </header>
+
+    <div class="panel-container" id="top-display"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+        officiis.</div>
+
+    <div class="panel-container" id="choice-panel-container">
+        选择需要播放的音频/视频:
+        <br>
+        <div class="panel" name="Procedure">
+            <p>流程</p>
+            <div class="scroll-panel">
+                <button class="av-display" name="NiYaoBuYaoBa" onclick="playAudio('NiYaoBuYaoBa')">你要不要吧</button>
+                <br>
+                <button class="av-display" name="NiYaoBuYao" onclick="playAudio('NiYaoBuYao')">你要不要？！</button>
+                <br>
+                <button class="av-display" name="BuYao" onclick="playAudio('BuYao')">不要！</button>
+                <br>
+                <button class="av-display" name="WoKenDingYao" onclick="playAudio('WoKenDingYao')">我肯定要啊</button>
+            </div>
+        </div>
+        <div class="panel">
+            <p>游戏结束</p>
+        </div>
+
+        <br>
+        <button>播放</button>
+        <script type="text/javascript" src="JS/PlayAudio.js"></script>
+    </div>
+
+</body>
+
+</html>

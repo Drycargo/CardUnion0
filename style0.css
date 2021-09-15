@@ -1,0 +1,86 @@
+@font-face {
+    font-family: ZhanKuGaoDuanHei;
+    src: url(/Fonts/站酷高端黑修订版1.13.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    font-size: 30px;
+    font-family: ZhanKuGaoDuanHei;
+
+    text-align: center;
+
+    color: white;
+    background-color: rgb(58, 58, 58);
+
+    margin: 0px auto;
+}
+
+#header2 {
+    font-size: 20px;
+
+    margin: -5px auto 5px auto;
+}
+
+.panel-container {
+    background-color: rgb(246, 247, 243);
+    font-family: ZhanKuGaoDuanHei;
+    border: solid 1px;
+    border-color: rgb(190, 190, 190);
+    border-radius: 5px;
+
+    width: fit-content;
+    height: fit-content;
+
+    /*float: left;*/
+    margin: 5px auto;
+
+}
+
+#top-display {
+    width: 650px;
+    height: 350px;
+    float: none;
+}
+
+.panel {
+    font-size: 30px;
+    font-family: ZhanKuGaoDuanHei;
+
+    background-color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: gray;
+    margin: 10px auto;
+    float: left;
+
+    width: 250px;
+    height: 400px;
+}
+
+.scroll-panel {
+    background-color: gainsboro;
+    height: 360px;
+    overflow-y: scroll;
+    margin: auto 5px;
+}
+
+#choice-panel-container {
+    font-size: 25px;
+}
+
+.av-display {
+    font-size: 18px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
