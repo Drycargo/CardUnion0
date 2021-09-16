@@ -9,15 +9,40 @@ $(function () {
 })
 
 function doConstruct(data) {
-    for (var item of data) {
+    for (const item of data) {
         var title = item.title;
         var display = item.display;
-        alert(title + display);
-        $('<div />', {
+
+        //alert(title + display);
+        
+        //create panel
+        var $panel = $('<div />', {
             class: "panel",
             name: title,
             text: display
-        }).appendTo($("#choice-panel-container"))
+        })
+
+        //create scroll-panel with contents
+        var $scrollPanel = $("<div/>", {
+            class: "scroll-panel"
+        })
+        for (const audioEntry of item.contents) {
+            var command = "playAudio(\'" + audioEntry.name + "\')";
+            var $newButton = $('<button/>', {
+                class: "av-display",
+                name: audioEntry.name,
+                text: audioEntry.content,
+                onclick: command
+            })
+
+            $newButton.appendTo($scrollPanel);
+            $("<br>").appendTo($scrollPanel);
+        }
+        
+
+        $scrollPanel.appendTo($panel);
+
+        $panel.appendTo($("#choice-panel-container"));
     }
 
 }

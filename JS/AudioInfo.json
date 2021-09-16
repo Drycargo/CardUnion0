@@ -6,5 +6,13 @@
             {"name": "NiYaoBuYao", "content": "你要不要?!"},
             {"name": "BuYao", "content": "不要!"},
             {"name": "WoKenDingYao", "content": "我肯定要啊"}
-        ]}
+        ]},
+
+    {   "title": "Inpatience",
+        "display": "催促",
+        "contents":[
+            {"name": "KaBuQiNuo", "content": "给阿姨倒一杯卡布奇诺"}
+        ]
+        
+    }
 ]
