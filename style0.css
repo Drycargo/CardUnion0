@@ -3,6 +3,7 @@
     src: url("/Fonts/ZK.ttf");
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -47,10 +48,24 @@ header {
 }
 
 #top-display {
-    width: 650px;
+    width: 450px;
     height: 350px;
+
+    transition-duration: 500ms;
+
     float: none;
 }
+
+@media screen and (min-width: 700px) {
+
+    #top-display {
+        width: 650px;
+        height: 350px;
+        float: none;
+    }
+}
+
+
 
 .panel {
     font-size: 30px;
@@ -60,8 +75,9 @@ header {
     border: solid 1px;
     border-radius: 5px;
     border-color: gray;
-    margin: 10px auto;
-    float: left;
+    margin: 10px 10px;
+    /*float: left;不清楚与下一行的区别在哪，望指教*/
+    display: inline-block;
 
     width: 250px;
     height: 400px;
@@ -79,6 +95,7 @@ header {
 }
 
 .av-display {
+    background-color: rgb(253, 253, 252);
     font-size: 18px;
     margin: 5px 5px;
     border-radius: 5px;

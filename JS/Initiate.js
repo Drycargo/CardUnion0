@@ -42,7 +42,9 @@ function doConstruct(data) {
 
         $scrollPanel.appendTo($panel);
 
-        $panel.appendTo($("#choice-panel-container"));
+        $panel.appendTo("#choice-panel-container");
     }
 
+    $("<br><button>播放</button>").appendTo("#choice-panel-container")
+    
 }
