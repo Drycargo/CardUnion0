@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恭喜！</title>
+    <style>
+        #all {
+            position: relative;
+        }
+
+        #vid {
+            top: 10px;
+            position: absolute;
+            margin: 100px auto;
+        }
+
+        #sign {
+            width: 50px;
+            height: 50px;
+            background-color: lightgrey;
+            position: absolute;
+            /*margin: 50px auto;*/
+            top: 200px;
+            left: 10px;
+            z-index: 1;
+            border-radius: 50%;
+            transition: 300ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="sign"></div>
+        <div id="vid" style="text-align:center;">
+            <video id="myVideo" width="420" style="margin-top:15px;" onclick="playPause()">
+                <source src="../Video/Congrats/EVA26-Japanese.mp4" type="video/mp4" />
+                浏览器不支持HTML5:video
+            </video>
+        </div>
+    </div>
+    <script>
+        var v = document.getElementById("myVideo");
+        var s = document.getElementById("sign");
+
+        function playPause() {
+            if (v.paused) {
+                myVideo.play();
+                v.style.opacity = "1";
+                s.style.opacity = "0";
+                s.style.transform = "scale(1.2)";
+            } else {
+                v.pause();
+                v.style.opacity = "0.8";
+                s.style.opacity = "0.9";
+                s.style.transform = "scale(1)";
+            }
+        }
+    </script>
+</body>
+
+</html>
