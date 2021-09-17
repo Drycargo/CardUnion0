@@ -1,7 +1,7 @@
 $(function () {
     $.ajax({
         type: "Get",
-        url: "../../Video/Congrats/CongratsInfo.json",
+        url: "../Video/Congrats/CongratsInfo.json",
         success: function (data) {
             doConstruct(data);
         }

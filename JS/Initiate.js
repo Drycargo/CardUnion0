@@ -51,7 +51,7 @@ function finalPanel() {
     var $bt = $("<button/>", {
         text: "恭喜！",
         id: "congrats-video",
-        onclick: "window.open(\"Subpages/Congrats/index.html\")"
+        onclick: "window.open(\"Subpage_Congrats/index.html\")"
     });
     
     $("<br>").appendTo("#choice-panel-container");

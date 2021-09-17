@@ -4,7 +4,7 @@ var $videoSource = $("#video-source");
 
 function switchVideo(){
     var selected = $selector.val();
-    var url = "../../Video/Congrats/EVA26-" + selected + ".mp4";
+    var url = "../Video/Congrats/EVA26-" + selected + ".mp4";
 
     var $newVideo = $("<source/>", {
         id: "video-source",
