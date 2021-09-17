@@ -5,6 +5,9 @@
     {   "language" : "Catalan", 
         "display": ""},
 
+    {   "language" : "Chinese", 
+        "display": "祝贺你"},
+
     {   "language" : "English", 
         "display": "congratulations"},
 
@@ -22,9 +25,6 @@
 
     {   "language" : "Korean", 
         "display": ""},
-
-    {   "language" : "Chinese", 
-        "display": "祝贺你"},
 
     {   "language" : "Portuguese", 
         "display": "Parabéns"},
