@@ -4,6 +4,7 @@ $(function () {
         url: "JS/AudioInfo.json",
         success: function (data) {
             doConstruct(data);
+            finalPanel();
         }
     })
 })
@@ -33,7 +34,7 @@ function doConstruct(data) {
                 name: audioEntry.name,
                 text: audioEntry.content,
                 onclick: command
-            })
+            });
 
             $newButton.appendTo($scrollPanel);
             $("<br>").appendTo($scrollPanel);
@@ -44,7 +45,15 @@ function doConstruct(data) {
 
         $panel.appendTo("#choice-panel-container");
     }
+}
 
-    $("<br><button>播放</button>").appendTo("#choice-panel-container")
+function finalPanel() {    
+    var $bt = $("<button/>", {
+        text: "恭喜！",
+        id: "congrats-video",
+        onclick: "window.open(\"Subpages/Congrats.html\")"
+    });
     
+    $("<br>").appendTo("#choice-panel-container");
+    $bt.appendTo("#choice-panel-container");
 }

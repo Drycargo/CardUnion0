@@ -33,10 +33,10 @@ header {
 }
 
 .panel-container {
-    background-color: rgb(246, 247, 243);
+    background-color: rgba(217, 255, 252, 0.842);
     font-family: ZhanKuGaoDuanHei;
     border: solid 1px;
-    border-color: rgb(190, 190, 190);
+    border-color: #bebebe;
     border-radius: 5px;
 
     width: fit-content;
@@ -44,7 +44,7 @@ header {
 
     /*float: left;*/
     margin: 5px auto;
-
+    padding: 5px;
 }
 
 #top-display {
@@ -84,7 +84,7 @@ header {
 }
 
 .scroll-panel {
-    background-color: gainsboro;
+    background-color: rgb(228, 245, 244);
     height: 360px;
     overflow-y: scroll;
     margin: auto 5px;
@@ -95,9 +95,39 @@ header {
 }
 
 .av-display {
-    background-color: rgb(253, 253, 252);
+    background-color: rgb(206, 233, 255);
     font-size: 18px;
     margin: 5px 5px;
     border-radius: 5px;
     padding: 2px 5px;
+    border-width: 1px;
+    transition-duration: 200ms;
+}
+
+.av-display:hover {
+    transform: scale(1.05);
+    box-shadow: teal 2px 2px;
+}
+
+#congrats-video {
+    margin: 5px 10px;
+    padding: 5px;
+
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(23, 68, 38);
+
+    box-shadow: turquoise 0 0;
+    background-color: rgb(98, 232, 241);
+
+    border: 0px;
+
+    transition-duration: 200ms;
+}
+
+#congrats-video:hover {
+    transform: skew(-5deg) translateX(-5px);
+    box-shadow: rgb(128, 255, 202) 30px 0px;
+    opacity: 0.8;
+    color: black;
 }

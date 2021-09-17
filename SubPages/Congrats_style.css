@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+
+#all {
+    width: fit-content;
+    margin: 5px auto;
+    text-align: center;
+    left: calc(50%-210px);
+
+}
+
+#vid {
+    padding: 10px 10px;
+    background-color: rgb(214, 247, 244);
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    box-shadow: rgb(164, 221, 223) 2px 2px;
+    /*left: calc(50%-210px);*/
+}
+
+#myVideo {
+    top: auto;
+    position: relative;
+    z-index: 0;
+    width: 420px;
+    margin-top: 15px;
+    /*margin: 100px auto;*/
+    transition-duration: 100ms;
+}
+
+#sign {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(54, 54, 54);
+    position: absolute;
+    margin: auto auto;
+    top: calc(45%);
+    left: calc(43%);
+    z-index: 1;
+    border-radius: 50%;
+    transition: 500ms;
+    opacity: 0;
+}
+
+.right-arrow {
+    width: 0;
+    height: 0;
+    border-left: calc(1.732*15px) solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 11px);
+    border-radius: 10%;
+    transition: 200ms;
+}
+
+.pause-sign {
+    width: 10px;
+    height: 15px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 10%;
+    position: absolute;
+    top: calc(50% - 7.5px);
+    left: 15px;
+    transition: 200ms;
+}
+
+#language-selector {
+    background-color: rgba(75, 107, 253, 0.801);
+    font-size: 15px;
+    color: rgb(255, 255, 253);
+    opacity: 0.8;
+    transition-duration: 300ms;
+    height: 30px;
+}
+
+#selection-panel {
+    float: left;
+    background-color: rgba(73, 146, 255, 0.671);
+    margin: 15px;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: rgb(14, 124, 250) 2px 2px;
+    transition-duration: 150ms;
+
+    color: rgb(255, 255, 255)
+}
+
+.language-option {
+    height: 25px;
+}

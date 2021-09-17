@@ -1,0 +1,43 @@
+[
+    {   "language" : "Cantonese", 
+        "display": "恭喜你啊"},
+
+    {   "language" : "Catalan", 
+        "display": ""},
+
+    {   "language" : "English", 
+        "display": "congratulations"},
+
+    {   "language" : "French", 
+        "display": "félicitations"},
+
+    {   "language" : "German", 
+        "display": ""},
+
+    {   "language" : "Italian", 
+        "display": "congratulazioni"},
+
+   {   "language" : "Japanese", 
+        "display": "おめでとう"},
+
+    {   "language" : "Korean", 
+        "display": ""},
+
+    {   "language" : "Mandarin", 
+        "display": "祝贺你"},
+
+    {   "language" : "Portuguese", 
+        "display": "Parabéns"},
+
+    {   "language" : "Russian", 
+        "display": "поздравля"},
+
+    {   "language" : "Spanish-European", 
+        "display": "felicidades"},
+        
+    {   "language" : "Spanish-Mexican", 
+        "display": "felicidades"},
+
+   {   "language" : "Thai", 
+        "display": "ยินดีด้วย"}
+]
