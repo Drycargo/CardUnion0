@@ -3,28 +3,28 @@
         "display": "恭喜你啊"},
 
     {   "language" : "Catalan", 
-        "display": ""},
+        "display": "Felicitats"},
 
     {   "language" : "Chinese", 
         "display": "祝贺你"},
 
     {   "language" : "English", 
-        "display": "congratulations"},
+        "display": "Congratulations"},
 
     {   "language" : "French", 
-        "display": "félicitations"},
+        "display": "Félicitations"},
 
     {   "language" : "German", 
-        "display": ""},
+        "display": "Herzlichen Glückwunsch"},
 
     {   "language" : "Italian", 
-        "display": "congratulazioni"},
+        "display": "Congratulazioni"},
 
    {   "language" : "Japanese", 
         "display": "おめでとう"},
 
     {   "language" : "Korean", 
-        "display": ""},
+        "display": "축하 해"},
 
     {   "language" : "Portuguese", 
         "display": "Parabéns"},
@@ -33,10 +33,10 @@
         "display": "поздравля"},
 
     {   "language" : "Spanish-European", 
-        "display": "felicidades"},
+        "display": "Felicidades"},
         
     {   "language" : "Spanish-Mexican", 
-        "display": "felicidades"},
+        "display": "Felicidades"},
 
    {   "language" : "Thai", 
         "display": "ยินดีด้วย"}
