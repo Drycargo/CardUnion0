@@ -36,7 +36,7 @@ header {
 
 .panel-container {
     /*background-color: rgba(217, 255, 252, 0.842);*/
-    background: linear-gradient(185deg, rgba(217, 255, 252, 0.842), rgba(146, 255, 204, 0.904));
+    background: linear-gradient(185deg, rgba(217, 255, 252, 0.842), rgba(146, 255, 204, 0.603));
     font-family: ZhanKuGaoDuanHei;
     border: solid 1px;
     border-color: #bebebe;
@@ -105,7 +105,8 @@ header {
 }
 
 .av-display {
-    background-color: rgb(206, 233, 255);
+    /*background-color: rgb(206, 233, 255);*/
+    background: linear-gradient(-5deg, rgb(211, 253, 247), rgb(199, 242, 245), rgb(211, 253, 247));
     font-size: 18px;
     margin: 5px 5px;
     border-radius: 5px;
@@ -120,8 +121,11 @@ header {
     cursor: pointer;
 }
 
-#congrats-video {
-    margin: 5px 45%;
+#congrats-video,
+#congrats-video::after {
+    position: relative;
+
+    margin: 5px 42%;
     padding: 5px;
 
     font-size: 20px;
@@ -130,16 +134,35 @@ header {
 
     box-shadow: turquoise 0 0;
     background-color: rgb(98, 232, 241);
+    background: linear-gradient(rgb(98, 232, 241), turquoise);
 
-    border: 0px;
+    border: 0;
 
     transition-duration: 200ms;
 }
 
 #congrats-video:hover {
     transform: skew(-5deg) translateX(-5px);
-    box-shadow: rgb(128, 255, 202) 30px 0px;
-    opacity: 0.8;
+    box-shadow: rgb(128, 241, 217) 30px 0px;
+    opacity: 0.9;
     color: black;
+    cursor: pointer;
+}
+
+#congrats-video::after {
+    content: "恭喜！";
+    z-index: -1;
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+    margin: 0 0;
+    opacity: 0;
+}
+
+#congrats-video:hover::after {
+    box-shadow: rgb(179, 146, 255) 15px 0px;
+    opacity: 0.9;
+    color: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
