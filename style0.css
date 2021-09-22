@@ -11,7 +11,9 @@
 
 body {
     font-size: 16px;
+
     background-color: rgb(255, 255, 255);
+    /*background: linear-gradient(0deg, black, white, blue) no-repeat;*/
 }
 
 header {
@@ -33,7 +35,8 @@ header {
 }
 
 .panel-container {
-    background-color: rgba(217, 255, 252, 0.842);
+    /*background-color: rgba(217, 255, 252, 0.842);*/
+    background: linear-gradient(185deg, rgba(217, 255, 252, 0.842), rgba(146, 255, 204, 0.904));
     font-family: ZhanKuGaoDuanHei;
     border: solid 1px;
     border-color: #bebebe;
@@ -81,6 +84,13 @@ header {
 
     width: 250px;
     height: 400px;
+
+    transition-duration: 200ms;
+}
+
+.panel:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(101, 206, 171, 0.836) 5px 5px;
 }
 
 .scroll-panel {
