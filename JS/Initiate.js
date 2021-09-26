@@ -20,7 +20,8 @@ function doConstruct(data) {
         var $panel = $('<div />', {
             class: "panel",
             name: title,
-            text: display
+            text: display,
+            onclick: "turnCard($(this))"
         })
 
         //create scroll-panel with contents

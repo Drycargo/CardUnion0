@@ -116,7 +116,7 @@ header {
 }
 
 .av-display:hover {
-    transform: scale(1.05);
+    transform: scale(1.001);
     box-shadow: teal 2px 2px;
     cursor: pointer;
 }
