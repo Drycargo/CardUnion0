@@ -37,11 +37,10 @@ header {
 #navigate {
     float: left;
 
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(58, 58, 58);
     padding: 3px 5px;
     width: 75px;
     height: 55px;
-    box-shadow: black 1px -1px 2px;
 
     color: white;
     font-size: 60px;
@@ -52,6 +51,13 @@ header {
 
     cursor: pointer;
 
+    transition-duration: 200ms;
+
+}
+
+#navigate:hover {
+    box-shadow: black 1px -1px 2px;
+    background-color: rgb(68, 68, 68);
 }
 
 .panel-container {

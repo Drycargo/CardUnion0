@@ -3,6 +3,7 @@ $(function () {
         type: "Get",
         url: "JS/AudioInfo.json",
         success: function (data) {
+            makeHeader();
             doConstruct(data);
             finalPanel();
         }
