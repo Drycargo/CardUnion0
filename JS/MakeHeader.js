@@ -39,8 +39,8 @@ function makeNavigateMenu(){
         hidden: true
     });
 
-    var $item1 = makeNavItem("音效", "../Card.html");
-    var $item2 = makeNavItem("掼蛋计分", "../Score.html");
+    var $item1 = makeNavItem("音效", "../CardUnion0/Card.html");
+    var $item2 = makeNavItem("掼蛋计分", "../CardUnion0/Score.html");
 
     $item1.appendTo($menu);
 
