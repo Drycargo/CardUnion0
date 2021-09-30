@@ -71,12 +71,25 @@ function expandNavigateMenu(){
 
         $navigate.attr("state", true);
     }
-    else{
-        $navigate.css({"background-color": "rgb(58, 58, 58)", 
+    else
+        turnOffNavMenu();
+}
+
+function turnOffNavMenu(){
+    var $navigate = $("#navigate");
+    var $navigateMenu = $("#navigateMenu");
+
+    $navigate.css({"background-color": "rgb(58, 58, 58)", 
         "box-shadow": "rgb(150, 150, 150) 0px 0px 0px inset"});
 
-        $navigateMenu.attr("hidden", true);
+    $navigateMenu.attr("hidden", true);
 
-        $navigate.attr("state", false);
-    }
+    $navigate.attr("state", false);
+}
+
+function clickOutOfNav(){
+    var $navigate = $("#navigate");
+
+    if($navigate.attr("state") == "true")
+        turnOffNavMenu();
 }
