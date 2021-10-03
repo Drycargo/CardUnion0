@@ -5,7 +5,7 @@ $(function () {
         success: function (data) {
             makeHeader();
             doConstruct(data);
-            finalPanel();
+            finalPanel("#choice-panel-container");
         }
     })
 })
@@ -47,15 +47,4 @@ function doConstruct(data) {
 
         $panel.appendTo("#choice-panel-container");
     }
-}
-
-function finalPanel() {    
-    var $bt = $("<button/>", {
-        text: "恭喜！",
-        id: "congrats-video",
-        onclick: "window.open(\"Subpage_Congrats/index.html\")"
-    });
-    
-    $("<br>").appendTo("#choice-panel-container");
-    $bt.appendTo("#choice-panel-container");
 }

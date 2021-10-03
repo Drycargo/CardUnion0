@@ -1,0 +1,20 @@
+.score-panel {
+    background-color: rgb(255, 255, 245);
+    margin: 10px 10px;
+    float: left;
+
+    border-radius: 5%;
+}
+
+.num-container {
+    font-size: 100px;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.plus-score-button {
+    font-size: 30px;
+
+    margin: 5px;
+    padding: 3px 5px;
+}

@@ -37,7 +37,7 @@ header {
 #navContainer {
     position: absolute;
     width: max-content;
-    height: max-content;
+    height: 55px;
 
     top: 0;
     left: 0;
@@ -212,8 +212,10 @@ header {
 
 #congrats-video,
 #congrats-video::after {
+    text-align: center;
     position: relative;
 
+    width: 70px;
     margin: 5px 42%;
     padding: 5px;
 
@@ -232,7 +234,7 @@ header {
 
 #congrats-video:hover {
     transform: skew(-5deg) translateX(-5px);
-    box-shadow: rgb(128, 241, 217) 30px 0px;
+    box-shadow: rgb(128, 241, 217) 40px 0px;
     opacity: 0.9;
     color: black;
     cursor: pointer;
@@ -240,6 +242,7 @@ header {
 
 #congrats-video::after {
     content: "恭喜！";
+    color: rgb(98, 232, 241);
     z-index: -1;
     position: absolute;
 
